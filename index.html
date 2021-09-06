@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+  <!-- displays  properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="main.css">
@@ -23,23 +23,33 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header ">
     <div class="container container__flex">
-      <div class="header__logo ">
+      <div  class="header__logo ">
         <h1 >J<span class="change__color">D</span></h1>
-      </div>
-      <button id="btn__menu" class="header__btn"><i class="fas fa-bars"></i></button>
-      <nav class="menu ">
-        <a href="#">Home</a>
-        <a href="#">About Me</a>
-        <a href="#">Skills</a>
-        <a href="#">Proyect</a>
-        <a href="#">Contact</a>
+      </div> 
+      <button id="btn__menu" class="header__btn">
+     
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" d="m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z" fill="#ffffff" data-original="#000000" style="" class=""/><path xmlns="http://www.w3.org/2000/svg" d="m464.883 208.867h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z" fill="#ffffff" data-original="#000000" style="" class=""/><path xmlns="http://www.w3.org/2000/svg" d="m464.883 353.467h-417.766c-25.98 0-47.117 21.137-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.012-21.137-47.149-47.117-47.149z" fill="#ffffff" data-original="#000000" style="" class=""/></g>
+</svg>
+      </button>
+      <nav class="menu">
+        <a class="menu__link" href="#home">Home</a>
+        <a class="menu__link" href="#about">About Me</a>
+        <a class="menu__link" href="#skills">Skills</a>
+        <a class="menu__link" href="#proyect">Proyect</a>
+        <a class="menu__link" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
+   <div class="container__moon"><img src="./assets/moon__main_adobespark.png"/></div> 
+  <div class="rotate__animation"></div>
+  <div class="rotate__animation two"></div>
+  <div class="rotate__animation three"></div>
+  <div class="btn__config"><i class="fas fa-cog"></i></div>
+  <div class="btn__config theme"><i class="far fa-sun"></i></div>
   <!--======================== main====================== -->
-  <main class="main">
+  <main  id="home" class="main">
     <div class="container container__flex">
       <div class="container__img ">
         <img src="./assets/main_adobespark.png" alt="">
@@ -54,7 +64,7 @@
       </div>
     </div>
   </main>
-  <div class="container"><i class="fas fa-chevron-down"></i></div>
+  <div class="container"><i id="icon__down" class="fas fa-chevron-down"></i></div>
   <!--======================== main====================== -->
   <!-- <section class="introduction">
     <div>
@@ -62,7 +72,7 @@
     </div>
     <p>Tienes un proyecto en mente, llevémoslo al mundo digital. Me encantaría conocerte y trabajar juntos</p>
   </section> -->
-  <section class="about">
+  <section id="about" class="about">
     <h2 class="subtitle ">Aboute Me</h2>
     <div class="container container__flex">
       <div class="container__img">
@@ -78,8 +88,8 @@
     </div>
     <button class="dowloand change__bg">Descargar CV</button>
   </section>
-
-  <section class="skills">
+     
+  <section id="skills" class="skills">
     <div class="container">
       <h2 class="subtitle">Skills</h2>
       <div class="skills__grid">
@@ -123,7 +133,7 @@
     </div>
   </section>
 
-  <section class="proyect">
+  <section id="proyect" class="proyect">
     <div class="container">
       <div class="slider-container">
         <div class="slider-content">
@@ -135,8 +145,8 @@
               <div class="slider-single-likes" href="#">
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet exercitationem suscipit doloremque soluta vero nam voluptatum esse eveniet placeat praesentium libero distinctio veritatis, adipisci corrupti facere quae officiis saepe!</p>
                  <div class="slider-content-btn ">
-                   <a href="#" class="slider__buton">Preview Site</a>
-                   <a href="#" class="slider__buton">view code</a>
+                   <a href="#" class="slider__buton fas fa-eye">Preview </a>
+                   <a href="https://github.com/Joel-Hendrix1021/Todo-app-Frontend-Mentor" class="slider__buton fas fa-external-link-alt">view code</a>
                  </div>
               </div>
             </div>
@@ -149,8 +159,8 @@
               <div class="slider-single-likes" href="#">
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet exercitationem suscipit doloremque soluta vero nam voluptatum esse eveniet placeat praesentium libero distinctio veritatis, adipisci corrupti facere quae officiis saepe!</p>
                  <div class="slider-content-btn">
-                   <a href="#" class="slider__buton">Preview Site</a>
-                   <a href="#" class="slider__buton">view code</a>
+                   <a href="#" class="slider__buton fas fa-eye">Preview </a>
+                   <a href="https://github.com/Joel-Hendrix1021/react-api-contries" class="slider__buton fas fa-external-link-alt">view code</a>
                  </div>
               </div>
             </div>
@@ -162,9 +172,9 @@
               <h1 class="slider-single-title">Memory Game</h1>
               <div class="slider-single-likes">
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet exercitationem suscipit doloremque soluta vero nam voluptatum esse eveniet placeat praesentium libero distinctio veritatis, adipisci corrupti facere quae officiis saepe!</p>
-                 <div class="slider-content-btn  ">
-                   <a href="#" class="slider__buton">Preview Site</a>
-                   <a href="#" class="slider__buton">view code</a>
+                 <div class="slider-content-btn ">
+                   <a href="https://joel-hendrix1021.github.io/YU-GI-OH-game/" class="slider__buton  fas fa-eye">Preview </a>
+                   <a href="https://github.com/Joel-Hendrix1021/YU-GI-OH-game" class="slider__buton fas fa-external-link-alt">view code</a>
                  </div>
               </div>
             </div>
@@ -173,12 +183,12 @@
           <div class="slider-single">
             <img class="slider-single-image" src="assets/proyect-4.png" alt="4" />
             <div class="content__text-slider">
-              <h1 class="slider-single-title">Site web restaurant</h1>
+              <h1 class="slider-single-title"> web restaurant</h1>
               <div class="slider-single-likes" href="#">
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet exercitationem suscipit doloremque soluta vero nam voluptatum esse eveniet placeat praesentium libero distinctio veritatis, adipisci corrupti facere quae officiis saepe!</p>
                  <div class="slider-content-btn ">
-                   <a href="#" class="slider__buton">Preview Site</a>
-                   <a href="#" class="slider__buton">view code</a>
+                   <a href="https://joel-hendrix1021.github.io/your-restaurant/" class="slider__buton fas fa-eye">Preview </a>
+                   <a href="https://github.com/Joel-Hendrix1021/your-restaurant" class="slider__buton fas fa-external-link-alt">view code</a>
                  </div>
               </div>
             </div>
@@ -191,8 +201,8 @@
               <div class="slider-single-likes" href="#">
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet exercitationem suscipit doloremque soluta vero nam voluptatum esse eveniet placeat praesentium libero distinctio veritatis, adipisci corrupti facere quae officiis saepe!</p>
                  <div class="slider-content-btn ">
-                   <a href="#" class="slider__buton">Preview Site</a>
-                   <a href="#" class="slider__buton">view code</a>
+                   <a href="#" class="slider__buton fas fa-eye">Preview </a>
+                   <a href="https://github.com/Joel-Hendrix1021/SPA-Pokemon" class="slider__buton fas fa-external-link-alt">view code</a>
                  </div>
               </div>
             </div>
@@ -205,8 +215,8 @@
               <div class="slider-single-likes" href="#">
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet exercitationem suscipit doloremque soluta vero nam voluptatum esse eveniet placeat praesentium libero distinctio veritatis, adipisci corrupti facere quae officiis saepe!</p>
                  <div class="slider-content-btn ">
-                   <a href="#" class="slider__buton">Preview Site</a>
-                   <a href="#" class="slider__buton">view code</a>
+                   <a href="https://joel-hendrix1021.github.io/Simon-dice-Game/" class="slider__buton fas fa-eye">Preview </a>
+                   <a href="https://github.com/Joel-Hendrix1021/Simon-dice-Game" class="slider__buton fas fa-external-link-alt">view code</a>
                  </div>
               </div>
             </div>
@@ -219,8 +229,8 @@
               <div class="slider-single-likes" href="#">
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet exercitationem suscipit doloremque soluta vero nam voluptatum esse eveniet placeat praesentium libero distinctio veritatis, adipisci corrupti facere quae officiis saepe!</p>
                  <div class="slider-content-btn ">
-                   <a href="#" class="slider__buton">Preview Site</a>
-                   <a href="#" class="slider__buton">view code</a>
+                   <a href="#" class="slider__buton fas fa-eye">Preview </a>
+                   <a href="#" class="slider__buton fas fa-external-link-alt">view code</a>
                  </div>
               </div>
             </div>
@@ -233,8 +243,8 @@
               <div class="slider-single-likes" href="#">
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet exercitationem suscipit doloremque soluta vero nam voluptatum esse eveniet placeat praesentium libero distinctio veritatis, adipisci corrupti facere quae officiis saepe!</p>
                  <div class="slider-content-btn ">
-                   <a href="#" class="slider__buton">Preview Site</a>
-                   <a href="#" class="slider__buton">view code</a>
+                   <a href="#" class="slider__buton fas fa-eye">Preview </a>
+                   <a href="#" class="slider__buton fas fa-external-link-alt">view code</a>
                  </div>
               </div>
             </div>
@@ -247,8 +257,8 @@
               <div class="slider-single-likes" href="#">
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet exercitationem suscipit doloremque soluta vero nam voluptatum esse eveniet placeat praesentium libero distinctio veritatis, adipisci corrupti facere quae officiis saepe!</p>
                  <div class="slider-content-btn ">
-                   <a href="#" class="slider__buton">Preview Site</a>
-                   <a href="#" class="slider__buton">view code</a>
+                   <a href="#" class="slider__buton fas fa-eye">Preview </a>
+                   <a href="https://github.com/Joel-Hendrix1021/mobile-firts/blob/master/index.html" class="slider__buton fas fa-external-link-alt">view code</a>
                  </div>
               </div>
             </div>
@@ -258,11 +268,11 @@
             <img class="slider-single-image" src="assets/proyecto-10.png" alt="1" />
             <div class="content__text-slider">
               <h1 class="slider-single-title">Todo List</h1>
-              <div class="slider-single-likes" href="#">
+              <div class="slider-single-likes" >
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet exercitationem suscipit doloremque soluta vero nam voluptatum esse eveniet placeat praesentium libero distinctio veritatis, adipisci corrupti facere quae officiis saepe!</p>
                  <div class="slider-content-btn">
-                   <a href="#" class="slider__buton ">Preview Site</a>
-                   <a href="#" class="slider__buton">view code</a>
+                   <a href="#" class="slider__buton fas fa-eye">Preview </a>
+                   <a href="https://github.com/Joel-Hendrix1021/frontend-mentor-static-job-listings" class="slider__buton fas fa-external-link-alt">view code</a>
                  </div>
               </div>
             </div>
@@ -274,7 +284,7 @@
 
   </section>
 
-  <section class="contact">
+  <section  class="contact">
     <h2 class="subtitle">Contact</h2>
     <div class="container ">
       <div class="container__contact__intro">
@@ -287,7 +297,7 @@
         </p>
       </div>
       <!--=================== container fom the contac -->
-      <div class="container__contact">
+      <div id="contact" class="container__contact">
         <form class="contact__form">
           <input type="text" name="name" placeholder="Name">
           <input type="text" name="email" placeholder="Email">
@@ -338,6 +348,8 @@
 
     </div>
   </section>
+
+  <div class="upTop hidden"><a href="#home" class="fas fa-arrow-circle-up"></a></div>
   <footer class="footer">
     <div class="container">
 
