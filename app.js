@@ -21,11 +21,38 @@ const colorsTheme = [
   },
 ];
 
+
+const lightTheme = {
+  "--bg-menu":"#d3d1cb",
+  "--bg-color":"#E8E7E4",
+  // "--neuform-dark":"#0b1523",
+  "--color-text":"#515355",
+  "--colorIcon":"#fff",
+  "--color1-neoformis":"#878684",
+  "--color2-neoforms":"#ffffff",
+  "--main-title":"#515355",
+  "--icon-svg":"#515355"
+};
+
+const darkTheme = {
+  "--bg-menu":"#0b1523",
+  "--bg-color":"#181f2a;",
+  "--neuform-dark":"#0b1523",
+  "--color-text":"#a4a6a7",
+  "--colorIcon":"#ffff",
+  "--color1-neoformis":" #0a0c11",
+  "--color2-neoforms":"#263243",
+  "--main-title":"#fff",
+  "--icon-svg":"#fff"
+};
+
+
 const $btnMenu = document.getElementById("btn__menu");
 const $up = document.querySelector(".upTop");
 const $btnConfig = document.querySelector(".btn__config");
 const $nav = document.querySelector(".menu");
 const $detailTheme = document.querySelector(".themeDetails");
+const $theme = document.querySelector('.theme')
 
 $btnMenu.addEventListener("click", (e) => {
   if (!$nav.classList.contains("show")) {
@@ -95,3 +122,9 @@ $detailTheme.addEventListener("click", (e) => {
            break;
    }
 });
+
+
+$theme.addEventListener('click', ()=> {
+  console.log('hola')
+  document.documentElement.style.setProperty("--bg-color", '#E8E7E4');
+})
