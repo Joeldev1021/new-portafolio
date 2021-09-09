@@ -15,10 +15,12 @@
 .DS_Store
 
 *.scss
+*.png
+*.jpg
 
 /images
 /design
-/assets
+ 
 *.md
 
 *.map
