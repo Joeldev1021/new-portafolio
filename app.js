@@ -31,20 +31,23 @@ const lightTheme = {
   "--color1-neoformis":"#878684",
   "--color2-neoforms":"#ffffff",
   "--main-title":"#515355",
-  "--icon-svg":"#515355"
+  "--icon-svg":"#515355",
+  "--borderBoton":"#b7afaf"
 };
 
 const darkTheme = {
   "--bg-menu":"#0b1523",
-  "--bg-color":"#181f2a;",
-  "--neuform-dark":"#0b1523",
+  "--bg-color":"#181f2a",
+  // "--neuform-dark":"#0b1523",
   "--color-text":"#a4a6a7",
   "--colorIcon":"#ffff",
   "--color1-neoformis":" #0a0c11",
   "--color2-neoforms":"#263243",
   "--main-title":"#fff",
-  "--icon-svg":"#fff"
+  "--icon-svg":"#fff",
+  "--borderBoton":"#353232"
 };
+
 
 
 const $btnMenu = document.getElementById("btn__menu");
@@ -53,6 +56,7 @@ const $btnConfig = document.querySelector(".btn__config");
 const $nav = document.querySelector(".menu");
 const $detailTheme = document.querySelector(".themeDetails");
 const $theme = document.querySelector('.theme')
+const $containerMoon = document.querySelector('.container__moon')
 
 $btnMenu.addEventListener("click", (e) => {
   if (!$nav.classList.contains("show")) {
@@ -124,7 +128,22 @@ $detailTheme.addEventListener("click", (e) => {
 });
 
 
-$theme.addEventListener('click', ()=> {
-  console.log('hola')
-  document.documentElement.style.setProperty("--bg-color", '#E8E7E4');
+let switchTheme = false
+
+$theme.addEventListener('click', (e)=> {
+   switchTheme = !switchTheme
+   switchTheme? switchChangeTheme(lightTheme): switchChangeTheme(darkTheme)
+   $theme.innerHTML = switchTheme ? '<i id="iconTheme" class="far fa-moon"></i>':'<i id="iconTheme" class="far fa-sun"></i>'
+   moveMoon()
 })
+
+function switchChangeTheme(theme) {
+    for (const iterator in theme) {
+      document.documentElement.style.setProperty(iterator, theme[iterator]);
+    }
+}
+
+const moveMoon=()=>{
+  $containerMoon.classList.toggle('moveMoonLigth')
+}
+
