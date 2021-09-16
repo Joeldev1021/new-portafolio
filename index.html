@@ -1,371 +1,697 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays  properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays  properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/favicon-96x96.png"
+    />
+    <link rel="stylesheet" href="main.css" />
 
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
-  <link rel="stylesheet" href="main.css">
+    <!-- cdn fontawasome -->
 
-  <!-- cdn fontawasome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- fonts  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
+    <title>Joel Dev</title>
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <!-- fonts  -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
- 
-  <title>Joel Dev</title>
-
-</head>
-
-<body>
-  <header class="header ">
-    <div class="container container__flex">
-      <div  class="header__logo ">
-        <h1 >J<span class="change__color">D</span></h1>
-      </div> 
-      <button id="btn__menu" class="header__btn">
-     
-<svg id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path id="fill--svg" xmlns="http://www.w3.org/2000/svg" d="m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z" fill="#ffffff" data-original="#000000" style="" class=""/><path xmlns="http://www.w3.org/2000/svg" d="m464.883 208.867h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z" fill="#ffffff" data-original="#000000" style="" class=""/><path xmlns="http://www.w3.org/2000/svg" d="m464.883 353.467h-417.766c-25.98 0-47.117 21.137-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.012-21.137-47.149-47.117-47.149z" fill="#ffffff" data-original="#000000" style="" class=""/></g>
-</svg>
-      </button>
-      <nav class="menu">
-        <a class="menu__link" href="#home">Home</a>
-        <a class="menu__link" href="#about">About Me</a>
-        <a class="menu__link" href="#skills">Skills</a>
-        <a class="menu__link" href="#proyect">Proyect</a>
-        <a class="menu__link" href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-  <div class="container__moon"><img src="https://res.cloudinary.com/dhxrohqnk/image/upload/v1631200937/moon__main_adobespark_gfqekt.png"/></div> 
-  <div class="rotate__animation"></div>
-  <div class="rotate__animation two"></div>
-  <div class="rotate__animation three"></div>
-  <div class="btn__config"><i class="fas fa-cog"></i></div>
-  <ul class="themeDetails ">
-    <li data-color="1"></li>
-    <li data-color="2"></li>
-    <li data-color="3"></li>
-    <li data-color="4"></li>
-    <li data-color="5"></li>
-  </ul>
-  <div class="btn__config theme"><i id="iconTheme" class="far fa-sun"></i></div>
-  <!--======================== main====================== -->
-  <main  id="home" class="main">
-    <div class="container container__flex">
-      <div class="container__img ">
-        <img src="https://res.cloudinary.com/dhxrohqnk/image/upload/v1631201930/main_adobespark_tdm29f.png" alt="">
+  <body>
+    <header class="header">
+      <div class="container container__flex">
+        <div class="header__logo">
+          <h1>J<span class="change__color">D</span></h1>
+        </div>
+        <button id="btn__menu" class="header__btn">
+          <svg
+            id="svg"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            version="1.1"
+            width="512"
+            height=""
+            x="0"
+            y="0"
+            viewBox="0 0 512 512"
+            style="enable-background: new 0 0 512 512"
+            xml:space="preserve"
+            class=""
+          >
+            <g>
+              <path
+                id="fill--svg"
+                xmlns="http://www.w3.org/2000/svg"
+                d="m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z"
+                fill="#ffffff"
+                data-original="#000000"
+                style=""
+                class=""
+              />
+              <path
+                xmlns="http://www.w3.org/2000/svg"
+                d="m464.883 208.867h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z"
+                fill="#ffffff"
+                data-original="#000000"
+                style=""
+                class=""
+              />
+              <path
+                xmlns="http://www.w3.org/2000/svg"
+                d="m464.883 353.467h-417.766c-25.98 0-47.117 21.137-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.012-21.137-47.149-47.117-47.149z"
+                fill="#ffffff"
+                data-original="#000000"
+                style=""
+                class=""
+              />
+            </g>
+          </svg>
+        </button>
+        <nav class="menu">
+          <a class="menu__link" href="#home">Home</a>
+          <a class="menu__link" href="#about">About Me</a>
+          <a class="menu__link" href="#skills">Skills</a>
+          <a class="menu__link" href="#proyect">Proyect</a>
+          <a class="menu__link" href="#contact">Contact</a>
+        </nav>
       </div>
-      <div class="container__title ">
-        <p> Hola soy</p>
-        <h1 class="main__title">
-          <span class="change__color">
-            < </span>Joel Pimentel<span class="change__color"> /></span><br>
-        </h1>
-        <p>Front End Developer</p>
-      </div>
+    </header>
+    <div class="container__moon">
+      <img
+        src="https://res.cloudinary.com/dhxrohqnk/image/upload/v1631200937/moon__main_adobespark_gfqekt.png"
+      />
     </div>
-  </main>
-  <div class="container"><i id="icon__down" class="fas fa-chevron-down"></i></div>
-  <!--======================== main====================== -->
-  <!-- <section class="introduction">
+    <div class="rotate__animation"></div>
+    <div class="rotate__animation two"></div>
+    <div class="rotate__animation three"></div>
+    <div class="btn__config"><i class="fas fa-cog"></i></div>
+    <ul class="themeDetails">
+      <li data-color="1"></li>
+      <li data-color="2"></li>
+      <li data-color="3"></li>
+      <li data-color="4"></li>
+      <li data-color="5"></li>
+    </ul>
+    <div class="btn__config theme">
+      <i id="iconTheme" class="far fa-sun"></i>
+    </div>
+    <!--======================== main====================== -->
+    <main id="home" class="main">
+      <div class="container container__flex">
+        <div class="container__img">
+          <img
+            src="https://res.cloudinary.com/dhxrohqnk/image/upload/v1631201930/main_adobespark_tdm29f.png"
+            alt=""
+          />
+        </div>
+        <div class="container__title">
+          <p>Hi! I'm</p>
+          <h1 class="main__title">
+            <span class="change__color"> < </span>Joel Pimentel<span
+              class="change__color"
+            >
+              /></span
+            ><br />
+          </h1>
+          <p>Front End Developer</p>
+        </div>
+      </div>
+    </main>
+    <div class="container">
+      <i id="icon__down" class="fas fa-chevron-down"></i>
+    </div>
+    <!--======================== main====================== -->
+    <!-- <section class="introduction">
     <div>
       Trabajemos Juntos
     </div>
     <p>Tienes un proyecto en mente, llevémoslo al mundo digital. Me encantaría conocerte y trabajar juntos</p>
   </section> -->
-  <section id="about" class="about">
-    <h2 class="subtitle ">Aboute Me</h2>
-    <div class="container container__flex">
-      <div class="container__img">
-        <img class="img__about" src="./assets/undraw_Freelancer_re_irh4.svg" alt="">
-      </div>
-      <p class="about__text">¡Hola! <strong>Soy Joel Pimentel</strong>, comencé mi carrera profesional como Lic en
-        Farmacia y actualmente me estoy reinventando como
-        <strong>FRONTEND DEVELOPER.</strong>
-        Me considero una persona autodidacta, amante del buen diseño, de la buena musica y crear cosas que los demas
-        puedan utilizar.
-        Soy un aprendiz continuo. Para mí, aprender equivale a explorar nuevas ideas y crecer como persona.
-      </p>
-    </div>
-    <button class="dowloand change__bg">Descargar CV</button>
-  </section>
-     
-  <section id="skills" class="skills">
-    <div class="container">
-      <h2 class="subtitle">Skills</h2>
-      <div class="skills__grid">
-        <div class="skill__item">
-          <img src="./assets/html-5.svg" alt="HTML">
-          <p>HTML</p>
-        </div>
-        <div class="skill__item">
-          <img src="./assets/css-3.svg" alt="CSS">
-          <p>CSS</p>
-        </div>
-        <div class="skill__item">
-          <img src="./assets/javascript.svg" alt="JAVASCRIPT">
-          <p>JAVASCRIPT</p>
-        </div>
-        <div class="skill__item">
-          <img src="./assets/react.svg" alt="REACT">
-          <p>REACT</p>
-
-        </div>
-        <div class="skill__item">
-          <img src="./assets/git-icon.svg" alt="GIT">
-          <p>GIT</p>
-
-        </div>
-        <div class="skill__item">
-          <img src="./assets/bootstrap.svg" alt="BOOTSTRAP">
-          <p>BOOTSTRAP</p>
-        </div>
-        <div class="skill__item">
-          <img src="./assets/nodejs.svg" alt="NODE JS">
-          <p>NODE JS</p>
-
-        </div>
-        <div class="skill__item">
-          <img src="./assets/mongo.svg" alt="MONGODB">
-          <p>MONGODB</p>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="proyect" class="proyect">
-    <div class="container">
-      <div class="slider-container">
-        <div class="slider-content">
-
-          <div class="slider-single">
-            <img class="slider-single-image" src="https://res.cloudinary.com/dhxrohqnk/image/upload/v1631200940/proyect-1_vwttnq.png" alt="1" />
-            <div class="content__text-slider">
-              <h1 class="slider-single-title">Todo List</h1>
-              <div class="slider-single-likes" href="#">
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet exercitationem suscipit doloremque soluta vero nam voluptatum esse eveniet placeat praesentium libero distinctio veritatis, adipisci corrupti facere quae officiis saepe!</p>
-                 <div class="slider-content-btn ">
-                   <a href="#" class="slider__buton"><img class="icon_proyect" src="./assets/eye (1).svg" alt="eyes">Preview </a>
-                   <a href="https://github.com/Joel-Hendrix1021/Todo-app-Frontend-Mentor" class="slider__buton "><img class="icon_proyect" src="./assets/export.svg" alt="code">view code</a>
-                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="slider-single">
-            <img class="slider-single-image" src="https://res.cloudinary.com/dhxrohqnk/image/upload/v1631200939/proyect-2_dphxhm.png" alt="2" />
-            <div class="content__text-slider">
-              <h1 class="slider-single-title">App Country</h1>
-              <div class="slider-single-likes" href="#">
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet exercitationem suscipit doloremque soluta vero nam voluptatum esse eveniet placeat praesentium libero distinctio veritatis, adipisci corrupti facere quae officiis saepe!</p>
-                 <div class="slider-content-btn">
-                  <a href="#" class="slider__buton"><img class="icon_proyect" src="./assets/eye (1).svg" alt="eyes">Preview </a>
-                   <a href="https://github.com/Joel-Hendrix1021/react-api-contries" class="slider__buton"><img class="icon_proyect" src="./assets/export.svg" alt="code">view code</a>
-                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="slider-single">
-            <img class="slider-single-image" src="https://res.cloudinary.com/dhxrohqnk/image/upload/v1631200941/proyect-3_surhpq.png" alt="3" />
-            <div class="content__text-slider">
-              <h1 class="slider-single-title">Memory Game</h1>
-              <div class="slider-single-likes">
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet exercitationem suscipit doloremque soluta vero nam voluptatum esse eveniet placeat praesentium libero distinctio veritatis, adipisci corrupti facere quae officiis saepe!</p>
-                 <div class="slider-content-btn ">
-                  <a href="https://joel-hendrix1021.github.io/YU-GI-OH-game/" class="slider__buton"><img class="icon_proyect" src="./assets/eye (1).svg" alt="eyes">Preview </a>
-                   <a href="https://github.com/Joel-Hendrix1021/YU-GI-OH-game" class="slider__buton"><img class="icon_proyect" src="./assets/export.svg" alt="code">view code</a>
-                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="slider-single">
-            <img class="slider-single-image" src="https://res.cloudinary.com/dhxrohqnk/image/upload/v1631200941/proyect-4_s1ptqx.png" alt="4" />
-            <div class="content__text-slider">
-              <h1 class="slider-single-title"> web restaurant</h1>
-              <div class="slider-single-likes" href="#">
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet exercitationem suscipit doloremque soluta vero nam voluptatum esse eveniet placeat praesentium libero distinctio veritatis, adipisci corrupti facere quae officiis saepe!</p>
-                 <div class="slider-content-btn ">
-
-                   <a href="https://joel-hendrix1021.github.io/your-restaurant/" class="slider__buton "><img class="icon_proyect" src="./assets/eye (1).svg" alt="eyes"> Preview </a>
-                   <a href="https://github.com/Joel-Hendrix1021/your-restaurant" class="slider__buton"><img class="icon_proyect" src="./assets/export.svg" alt="code">view code</a>
-                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="slider-single">
-            <img class="slider-single-image" src="https://res.cloudinary.com/dhxrohqnk/image/upload/v1631200942/proyecto-5_posfmo.png" alt="5" />
-            <div class="content__text-slider">
-              <h1 class="slider-single-title">Poke-SPA</h1>
-              <div class="slider-single-likes" href="#">
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet exercitationem suscipit doloremque soluta vero nam voluptatum esse eveniet placeat praesentium libero distinctio veritatis, adipisci corrupti facere quae officiis saepe!</p>
-                 <div class="slider-content-btn ">
-                   <a href="#" class="slider__buton"><img class="icon_proyect" src="./assets/eye (1).svg" alt="eyes">Preview </a>
-                   <a href="https://github.com/Joel-Hendrix1021/SPA-Pokemon" class="slider__buton"><img class="icon_proyect" src="./assets/export.svg" alt="code">view code</a>
-                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="slider-single">
-            <img class="slider-single-image" src="https://res.cloudinary.com/dhxrohqnk/image/upload/v1631200941/proyect-6_adobespark_1_dhfxgc.png" alt="6" />
-            <div class="content__text-slider">
-              <h1 class="slider-single-title">Simon says</h1>
-              <div class="slider-single-likes" href="#">
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet exercitationem suscipit doloremque soluta vero nam voluptatum esse eveniet placeat praesentium libero distinctio veritatis, adipisci corrupti facere quae officiis saepe!</p>
-                 <div class="slider-content-btn ">
-                   <a href="https://joel-hendrix1021.github.io/Simon-dice-Game/" class="slider__buton "><img class="icon_proyect" src="./assets/eye (1).svg" alt="eyes">Preview </a>
-                   <a href="https://github.com/Joel-Hendrix1021/Simon-dice-Game" class="slider__buton"><img class="icon_proyect" src="./assets/export.svg" alt="code">view code</a>
-                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="slider-single">
-            <img class="slider-single-image" src="https://res.cloudinary.com/dhxrohqnk/image/upload/v1631200941/proyecto_7_adobespark_1_bja806.png" alt="1" />
-            <div class="content__text-slider">
-              <h1 class="slider-single-title">CRUD-REACT</h1>
-              <div class="slider-single-likes" href="#">
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet exercitationem suscipit doloremque soluta vero nam voluptatum esse eveniet placeat praesentium libero distinctio veritatis, adipisci corrupti facere quae officiis saepe!</p>
-                 <div class="slider-content-btn ">
-                   <a href="#" class="slider__buton "><img class="icon_proyect" src="./assets/eye (1).svg" alt="eyes">Preview </a>
-                   <a href="#" class="slider__buton"><img class="icon_proyect" src="./assets/export.svg" alt="code">view code</a>
-                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="slider-single">
-            <img class="slider-single-image" src="https://res.cloudinary.com/dhxrohqnk/image/upload/v1631200936/proyect_8_adobespark_1_mxfrgq.png" alt="1" />
-            <div class="content__text-slider">
-              <h1 class="slider-single-title">Landing Page</h1>
-              <div class="slider-single-likes" href="#">
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet exercitationem suscipit doloremque soluta vero nam voluptatum esse eveniet placeat praesentium libero distinctio veritatis, adipisci corrupti facere quae officiis saepe!</p>
-                 <div class="slider-content-btn ">
-                   <a href="#" class="slider__buton "><img class="icon_proyect" src="./assets/eye (1).svg" alt="eyes">Preview </a>
-                   <a href="#" class="slider__buton"><img class="icon_proyect" src="./assets/export.svg" alt="code">view code</a>
-                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="slider-single">
-            <img class="slider-single-image" src="https://res.cloudinary.com/dhxrohqnk/image/upload/v1631200939/proyect_9_adobespark_1_bl7dpg.png" alt="1" />
-            <div class="content__text-slider">
-              <h1 class="slider-single-title">Batabit</h1>
-              <div class="slider-single-likes" href="#">
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet exercitationem suscipit doloremque soluta vero nam voluptatum esse eveniet placeat praesentium libero distinctio veritatis, adipisci corrupti facere quae officiis saepe!</p>
-                 <div class="slider-content-btn ">
-                   <a href="#" class="slider__buton"><img class="icon_proyect" src="./assets/eye (1).svg" alt="eyes">Preview </a>
-                   <a href="https://github.com/Joel-Hendrix1021/mobile-firts/blob/master/index.html" class="slider__buton"><img class="icon_proyect" src="./assets/export.svg" alt="code">view code</a>
-                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="slider-single">
-            <img class="slider-single-image" src="https://res.cloudinary.com/dhxrohqnk/image/upload/v1631200941/proyecto-10_tbxton.png" alt="1" />
-            <div class="content__text-slider">
-              <h1 class="slider-single-title">Todo List</h1>
-              <div class="slider-single-likes" >
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet exercitationem suscipit doloremque soluta vero nam voluptatum esse eveniet placeat praesentium libero distinctio veritatis, adipisci corrupti facere quae officiis saepe!</p>
-                 <div class="slider-content-btn">
-                   <a href="#" class="slider__buton"><img class="icon_proyect" src="./assets/eye (1).svg" alt="eyes">Preview </a>
-                   <a href="https://github.com/Joel-Hendrix1021/frontend-mentor-static-job-listings" class="slider__buton"><img class="icon_proyect" src="./assets/export.svg" alt="code">view code</a>
-                 </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section  class="contact">
-    <h2 class="subtitle">Contact</h2>
-    <div class="container ">
-      <div class="container__contact__intro">
+    <section id="about" class="about">
+      <h2 class="subtitle">Aboute Me</h2>
+      <div class="container container__flex">
         <div class="container__img">
-          <img src="./assets//svg illustration/arranging-files.svg" alt="">
+          <img
+            class="img__about"
+            src="./assets/undraw_Freelancer_re_irh4.svg"
+            alt=""
+          />
         </div>
-        <p class="contac__text">Soy desarrollador de software. Puedo ayudarte a resolver algun problema, construir un
-          producto o hacer crecer tu proyecto.
-          <br>¿Cómo puedo ayudarte?
+        <p class="about__text">
+          Hello! I'm <strong>Soy Joel Pimentel</strong> started my professional
+          career as a and pharmacist and currently I'm reinventing myself as a
+          <strong>FRONTEND DEVELOPER.</strong>
+          I like to be self-taught, lover of good design and create things with
+          which we can interact. I am a continuous learner. Learning for me
+          equates to exploring new ideas and growing as an individual. I just
+          cannot imagine my life devoid of designing.
         </p>
       </div>
-      <!--=================== container fom the contac -->
-      <div id="contact" class="container__contact">
-        <form class="contact__form">
-          <input type="text" name="name" placeholder="Name">
-          <input type="text" name="email" placeholder="Email">
-          <textarea name="massage" id="" cols="30" rows="10" placeholder="messages"></textarea>
-          <div class="form__btn">
-            <button class="change__bg">send</button>
+      <button class="dowloand change__bg">
+        <img src="./assets/downloading-file.svg" alt="dowloand" /> Descargar CV
+      </button>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="subtitle">Skills</h2>
+        <div class="skills__grid">
+          <div class="skill__item">
+            <img src="./assets/html-5.svg" alt="HTML" />
+            <p>HTML</p>
           </div>
-        </form>
-        <!--==================== container social media -->
-        <div class="container__social--grid">
-          <div class="card__social">
-            <div class="card__icon"><i class="fas fa-home"></i></div>
-            <div class="card__info">
-              <h3 class="card__title change__color">Direccion</h3>
-              <p class="card__item">Panama</p>
-              <p class="card__item">Herrera</p>
-            </div>
+          <div class="skill__item">
+            <img src="./assets/css-3.svg" alt="CSS" />
+            <p>CSS</p>
           </div>
-          <div class="card__social">
-            <div class="card__icon"><i class="far fa-comment"></i></div>
-            <div class="card__info">
-              <h3 class="card__title change__color">Social</h3>
-              <div class="container__icons">
-                <p class="card__item"><a class="fab fa-github link" href="https://github.com/Joel-Hendrix1021"></a></p>
-                <p class="card__item"><a class="fab fa-facebook-square link" href="https://www.facebook.com/joel.pimentel.56232"></a></p>
-                <p class="card__item"><a class="fab fa-linkedin-in link" href="https://www.linkedin.com/in/joel-pimentel-b0a933201/"></a></p>
+          <div class="skill__item">
+            <img src="./assets/javascript.svg" alt="JAVASCRIPT" />
+            <p>JAVASCRIPT</p>
+          </div>
+          <div class="skill__item">
+            <img src="./assets/react.svg" alt="REACT" />
+            <p>REACT</p>
+          </div>
+          <div class="skill__item">
+            <img src="./assets/git-icon.svg" alt="GIT" />
+            <p>GIT</p>
+          </div>
+          <div class="skill__item">
+            <img src="./assets/bootstrap.svg" alt="BOOTSTRAP" />
+            <p>BOOTSTRAP</p>
+          </div>
+          <div class="skill__item">
+            <img src="./assets/nodejs.svg" alt="NODE JS" />
+            <p>NODE JS</p>
+          </div>
+          <div class="skill__item">
+            <img src="./assets/mongo.svg" alt="MONGODB" />
+            <p>MONGODB</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyect" class="proyect">
+      <div class="container">
+        <div class="slider-container">
+          <div class="slider-content">
+            <div class="slider-single">
+              <img
+                class="slider-single-image"
+                src="https://res.cloudinary.com/dhxrohqnk/image/upload/v1631200940/proyect-1_vwttnq.png"
+                alt="1"
+              />
+              <div class="content__text-slider">
+                <h1 class="slider-single-title">Todo List</h1>
+                <div class="slider-single-likes" href="#">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia amet exercitationem suscipit doloremque soluta vero nam
+                    voluptatum esse eveniet placeat praesentium libero
+                    distinctio veritatis, adipisci corrupti facere quae officiis
+                    saepe!
+                  </p>
+                  <div class="slider-content-btn">
+                    <a href="#" class="slider__buton"
+                      ><img
+                        class="icon_proyect"
+                        src="./assets/eye (1).svg"
+                        alt="eyes"
+                      />Preview
+                    </a>
+                    <a
+                      href="https://github.com/Joel-Hendrix1021/Todo-app-Frontend-Mentor"
+                      class="slider__buton"
+                      ><img
+                        class="icon_proyect"
+                        src="./assets/export.svg"
+                        alt="code"
+                      />view code</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card__social">
-            <div class="card__icon"><i class="fas fa-phone-alt"></i></div>
-            <div class="card__info">
-              <h3 class="card__title change__color">Phone</h3>
-              <p class="card__item">+507 64951500</p>
+
+            <div class="slider-single">
+              <img
+                class="slider-single-image"
+                src="https://res.cloudinary.com/dhxrohqnk/image/upload/v1631200939/proyect-2_dphxhm.png"
+                alt="2"
+              />
+              <div class="content__text-slider">
+                <h1 class="slider-single-title">App Country</h1>
+                <div class="slider-single-likes" href="#">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia amet exercitationem suscipit doloremque soluta vero nam
+                    voluptatum esse eveniet placeat praesentium libero
+                    distinctio veritatis, adipisci corrupti facere quae officiis
+                    saepe!
+                  </p>
+                  <div class="slider-content-btn">
+                    <a href="#" class="slider__buton"
+                      ><img
+                        class="icon_proyect"
+                        src="./assets/eye (1).svg"
+                        alt="eyes"
+                      />Preview
+                    </a>
+                    <a
+                      href="https://github.com/Joel-Hendrix1021/react-api-contries"
+                      class="slider__buton"
+                      ><img
+                        class="icon_proyect"
+                        src="./assets/export.svg"
+                        alt="code"
+                      />view code</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card__social">
-            <div class="card__icon"><i class="far fa-envelope"></i></div>
-            <div class="card__info">
-              <h3 class="card__title change__color">Email</h3>
-              <p class="card__item">joelpimentel1995@gmail.com</p>
+
+            <div class="slider-single">
+              <img
+                class="slider-single-image"
+                src="https://res.cloudinary.com/dhxrohqnk/image/upload/v1631200941/proyect-3_surhpq.png"
+                alt="3"
+              />
+              <div class="content__text-slider">
+                <h1 class="slider-single-title">Memory Game</h1>
+                <div class="slider-single-likes">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia amet exercitationem suscipit doloremque soluta vero nam
+                    voluptatum esse eveniet placeat praesentium libero
+                    distinctio veritatis, adipisci corrupti facere quae officiis
+                    saepe!
+                  </p>
+                  <div class="slider-content-btn">
+                    <a
+                      href="https://joel-hendrix1021.github.io/YU-GI-OH-game/"
+                      class="slider__buton"
+                      ><img
+                        class="icon_proyect"
+                        src="./assets/eye (1).svg"
+                        alt="eyes"
+                      />Preview
+                    </a>
+                    <a
+                      href="https://github.com/Joel-Hendrix1021/YU-GI-OH-game"
+                      class="slider__buton"
+                      ><img
+                        class="icon_proyect"
+                        src="./assets/export.svg"
+                        alt="code"
+                      />view code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-single">
+              <img
+                class="slider-single-image"
+                src="https://res.cloudinary.com/dhxrohqnk/image/upload/v1631200941/proyect-4_s1ptqx.png"
+                alt="4"
+              />
+              <div class="content__text-slider">
+                <h1 class="slider-single-title">web restaurant</h1>
+                <div class="slider-single-likes" href="#">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia amet exercitationem suscipit doloremque soluta vero nam
+                    voluptatum esse eveniet placeat praesentium libero
+                    distinctio veritatis, adipisci corrupti facere quae officiis
+                    saepe!
+                  </p>
+                  <div class="slider-content-btn">
+                    <a
+                      href="https://joel-hendrix1021.github.io/your-restaurant/"
+                      class="slider__buton"
+                      ><img
+                        class="icon_proyect"
+                        src="./assets/eye (1).svg"
+                        alt="eyes"
+                      />
+                      Preview
+                    </a>
+                    <a
+                      href="https://github.com/Joel-Hendrix1021/your-restaurant"
+                      class="slider__buton"
+                      ><img
+                        class="icon_proyect"
+                        src="./assets/export.svg"
+                        alt="code"
+                      />view code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-single">
+              <img
+                class="slider-single-image"
+                src="https://res.cloudinary.com/dhxrohqnk/image/upload/v1631200942/proyecto-5_posfmo.png"
+                alt="5"
+              />
+              <div class="content__text-slider">
+                <h1 class="slider-single-title">Poke-SPA</h1>
+                <div class="slider-single-likes" href="#">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia amet exercitationem suscipit doloremque soluta vero nam
+                    voluptatum esse eveniet placeat praesentium libero
+                    distinctio veritatis, adipisci corrupti facere quae officiis
+                    saepe!
+                  </p>
+                  <div class="slider-content-btn">
+                    <a href="#" class="slider__buton"
+                      ><img
+                        class="icon_proyect"
+                        src="./assets/eye (1).svg"
+                        alt="eyes"
+                      />Preview
+                    </a>
+                    <a
+                      href="https://github.com/Joel-Hendrix1021/SPA-Pokemon"
+                      class="slider__buton"
+                      ><img
+                        class="icon_proyect"
+                        src="./assets/export.svg"
+                        alt="code"
+                      />view code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-single">
+              <img
+                class="slider-single-image"
+                src="https://res.cloudinary.com/dhxrohqnk/image/upload/v1631200941/proyect-6_adobespark_1_dhfxgc.png"
+                alt="6"
+              />
+              <div class="content__text-slider">
+                <h1 class="slider-single-title">Simon says</h1>
+                <div class="slider-single-likes" href="#">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia amet exercitationem suscipit doloremque soluta vero nam
+                    voluptatum esse eveniet placeat praesentium libero
+                    distinctio veritatis, adipisci corrupti facere quae officiis
+                    saepe!
+                  </p>
+                  <div class="slider-content-btn">
+                    <a
+                      href="https://joel-hendrix1021.github.io/Simon-dice-Game/"
+                      class="slider__buton"
+                      ><img
+                        class="icon_proyect"
+                        src="./assets/eye (1).svg"
+                        alt="eyes"
+                      />Preview
+                    </a>
+                    <a
+                      href="https://github.com/Joel-Hendrix1021/Simon-dice-Game"
+                      class="slider__buton"
+                      ><img
+                        class="icon_proyect"
+                        src="./assets/export.svg"
+                        alt="code"
+                      />view code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-single">
+              <img
+                class="slider-single-image"
+                src="https://res.cloudinary.com/dhxrohqnk/image/upload/v1631200941/proyecto_7_adobespark_1_bja806.png"
+                alt="1"
+              />
+              <div class="content__text-slider">
+                <h1 class="slider-single-title">CRUD-REACT</h1>
+                <div class="slider-single-likes" href="#">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia amet exercitationem suscipit doloremque soluta vero nam
+                    voluptatum esse eveniet placeat praesentium libero
+                    distinctio veritatis, adipisci corrupti facere quae officiis
+                    saepe!
+                  </p>
+                  <div class="slider-content-btn">
+                    <a href="#" class="slider__buton"
+                      ><img
+                        class="icon_proyect"
+                        src="./assets/eye (1).svg"
+                        alt="eyes"
+                      />Preview
+                    </a>
+                    <a href="#" class="slider__buton"
+                      ><img
+                        class="icon_proyect"
+                        src="./assets/export.svg"
+                        alt="code"
+                      />view code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-single">
+              <img
+                class="slider-single-image"
+                src="https://res.cloudinary.com/dhxrohqnk/image/upload/v1631200936/proyect_8_adobespark_1_mxfrgq.png"
+                alt="1"
+              />
+              <div class="content__text-slider">
+                <h1 class="slider-single-title">Landing Page</h1>
+                <div class="slider-single-likes" href="#">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia amet exercitationem suscipit doloremque soluta vero nam
+                    voluptatum esse eveniet placeat praesentium libero
+                    distinctio veritatis, adipisci corrupti facere quae officiis
+                    saepe!
+                  </p>
+                  <div class="slider-content-btn">
+                    <a href="#" class="slider__buton"
+                      ><img
+                        class="icon_proyect"
+                        src="./assets/eye (1).svg"
+                        alt="eyes"
+                      />Preview
+                    </a>
+                    <a href="#" class="slider__buton"
+                      ><img
+                        class="icon_proyect"
+                        src="./assets/export.svg"
+                        alt="code"
+                      />view code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-single">
+              <img
+                class="slider-single-image"
+                src="https://res.cloudinary.com/dhxrohqnk/image/upload/v1631200939/proyect_9_adobespark_1_bl7dpg.png"
+                alt="1"
+              />
+              <div class="content__text-slider">
+                <h1 class="slider-single-title">Batabit</h1>
+                <div class="slider-single-likes" href="#">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia amet exercitationem suscipit doloremque soluta vero nam
+                    voluptatum esse eveniet placeat praesentium libero
+                    distinctio veritatis, adipisci corrupti facere quae officiis
+                    saepe!
+                  </p>
+                  <div class="slider-content-btn">
+                    <a href="#" class="slider__buton"
+                      ><img
+                        class="icon_proyect"
+                        src="./assets/eye (1).svg"
+                        alt="eyes"
+                      />Preview
+                    </a>
+                    <a
+                      href="https://github.com/Joel-Hendrix1021/mobile-firts/blob/master/index.html"
+                      class="slider__buton"
+                      ><img
+                        class="icon_proyect"
+                        src="./assets/export.svg"
+                        alt="code"
+                      />view code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-single">
+              <img
+                class="slider-single-image"
+                src="https://res.cloudinary.com/dhxrohqnk/image/upload/v1631200941/proyecto-10_tbxton.png"
+                alt="1"
+              />
+              <div class="content__text-slider">
+                <h1 class="slider-single-title">Todo List</h1>
+                <div class="slider-single-likes">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia amet exercitationem suscipit doloremque soluta vero nam
+                    voluptatum esse eveniet placeat praesentium libero
+                    distinctio veritatis, adipisci corrupti facere quae officiis
+                    saepe!
+                  </p>
+                  <div class="slider-content-btn">
+                    <a href="#" class="slider__buton"
+                      ><img
+                        class="icon_proyect"
+                        src="./assets/eye (1).svg"
+                        alt="eyes"
+                      />Preview
+                    </a>
+                    <a
+                      href="https://github.com/Joel-Hendrix1021/frontend-mentor-static-job-listings"
+                      class="slider__buton"
+                      ><img
+                        class="icon_proyect"
+                        src="./assets/export.svg"
+                        alt="code"
+                      />view code</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
+    <section class="contact">
+      <h2 class="subtitle">Contact</h2>
+      <div class="container">
+        <div class="container__contact__intro">
+          <div class="container__img">
+            <img src="./assets//svg illustration/arranging-files.svg" alt="" />
+          </div>
+          <p class="contac__text">
+            I am a software developer. I can help you solve any problem, build a product or grow your project.
+            <br />How can I help you?
+          </p>
+        </div>
+        <!--=================== container fom the contac -->
+        <div id="contact" class="container__contact">
+          <form class="contact__form">
+            <input type="text" name="name" placeholder="Name" />
+            <input type="text" name="email" placeholder="Email" />
+            <textarea
+              name="massage"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="messages"
+            ></textarea>
+            <div class="form__btn">
+              <button class="change__bg">send</button>
+            </div>
+          </form>
+          <!--==================== container social media -->
+          <div class="container__social--grid">
+            <div class="card__social">
+              <div class="card__icon"><i class="fas fa-home"></i></div>
+              <div class="card__info">
+                <h3 class="card__title change__color">Direccion</h3>
+                <p class="card__item">Panama</p>
+                <p class="card__item">Herrera</p>
+              </div>
+            </div>
+            <div class="card__social">
+              <div class="card__icon"><i class="far fa-comment"></i></div>
+              <div class="card__info">
+                <h3 class="card__title change__color">Social</h3>
+                <div class="container__icons">
+                  <p class="card__item">
+                    <a
+                      class="fab fa-github link"
+                      href="https://github.com/Joel-Hendrix1021"
+                    ></a>
+                  </p>
+                  <p class="card__item">
+                    <a
+                      class="fab fa-facebook-square link"
+                      href="https://www.facebook.com/joel.pimentel.56232"
+                    ></a>
+                  </p>
+                  <p class="card__item">
+                    <a
+                      class="fab fa-linkedin-in link"
+                      href="https://www.linkedin.com/in/joel-pimentel-b0a933201/"
+                    ></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card__social">
+              <div class="card__icon"><i class="fas fa-phone-alt"></i></div>
+              <div class="card__info">
+                <h3 class="card__title change__color">Phone</h3>
+                <p class="card__item">+507 64951500</p>
+              </div>
+            </div>
+            <div class="card__social">
+              <div class="card__icon"><i class="far fa-envelope"></i></div>
+              <div class="card__info">
+                <h3 class="card__title change__color">Email</h3>
+                <p class="card__item">joelpimentel1995@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="upTop hidden">
+      <a href="#home"><img src="./assets/navigate-up-arrow.svg" alt="up" /></a>
     </div>
-  </section>
-
-  <div class="upTop hidden"><a href="#home" class="fas fa-arrow-circle-up"></a></div>
-  <footer class="footer">
-    <div class="container">
-
-      © Joel-Pimentel. All rights reserved
-
-    </div>
-  </footer>
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="app.js"></script>
-  <script src="carousel.js"></script>
-</body>
-
+    <footer class="footer">
+      <div class="container">© Joel-Pimentel. All rights reserved</div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="app.js"></script>
+    <script src="carousel.js"></script>
+  </body>
 </html>
