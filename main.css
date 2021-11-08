@@ -267,6 +267,8 @@ a {
 }
 
 .about .dowloand {
+  color: white;
+  display: inline-block;
   margin: 0.5rem auto;
   padding: 2rem;
   border: none;
@@ -300,6 +302,13 @@ a {
   grid-auto-rows: 20rem;
   -ms-grid-columns: (minmax(15rem, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+@media (min-width: 1300px) {
+  .skills .skills__grid {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .skills .skills__grid img {
